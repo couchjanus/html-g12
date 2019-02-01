@@ -1,15 +1,66 @@
 /* main.css */
 
+/* html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,
+abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,
+var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+        background: transparent;
+        box-sizing: border-box !important;
+} */
+
 /* body {
     font-size: 71.42857%;
 } */
 
-html  {  font-size: 62.5%; }
+/* 1rem = 10px */
+
+html  {  font-size: 62.5%; }  /* 10/14 */
 body  {  font-size: 1.4rem; } /* =14px */
 h1      {  font-size: 2.4rem; } /* =24px */
+
+/* .header {
+    background-color: #d8d8d8;
+    background-image: url("../images/01.jpg");
+    background-size: cover;
+    color: #fcfcfc;
+    padding: 14em 0;
+    text-align: center;
+}
+.header a {
+    color: #fcfcfc;
+}
+a {
+    color: dimgray;
+    text-decoration: none;
+}
+
+p {
+    text-indent: 1.5rem;
+}
+
+p { font-family: Georgia, 'Times New Roman', Times, serif;   }
+
+
+.navbar-nav {
+    list-style: none;
+}
+
+.navbar-nav li {
+    display: inline-block;
+}
+
+#main {
+    width: 100%;
+    color: #555;
+}
 
 p { margin-left: 1rem }
 h1 { font-size: 3em; margin-left: 1rem }
 
 p { font: 1.4em/1.2em Verdana, sans-serif; }
- 
+ */

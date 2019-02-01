@@ -15,52 +15,80 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
-    
+
     <style>
+        .wrapper {
+            font-size: 40px;
+            color: rgb(2, 111, 6);
+        }
+
+        .wrapper span {
+            font-size: 0.5em;
+            color: rgb(155, 53, 168);
+        }
+
+        .wrapper span i {
+            font-size: 1.5em;
+            color: rgb(211, 211, 60);
+        }
+
+
         .blog-post-title {
             text-transform: uppercase;
-            color: grey;
+            color: rgb(11, 169, 160);
         }
-        #main {
-            width: 100%;
-            color: #555;
+
+
+        .h1 {
+            text-transform: uppercase;
+            color: lightblue;
+            background-color: rgb(249, 201, 16); /* Цвет фона под заголовком */
+         }
+
+
+        .h2 {
+            text-transform: uppercase;
+            color: hsl(0, 100%, 50%);
+            background-color: hsla(56, 86%, 77%, 0.5);
+            /* Цвет фона под заголовком */
+
         }
+        
+        .decor{
+            text-decoration-color: #084ca1;
+            text-decoration: underline;
+            /*text-decoration-style: wavy | double | dotted | dashed */
+            /*text-decoration-style: wavy;*/
+
+        }
+
+
+        .selector {
+            width: 100px;
+            height: 100px;
+            color: chocolate;
+            display: block;
+            border: 5px solid red;
+        }
+
+        .selector {
+            width: auto;
+            height: auto;
+        }
+         
+
+        button {
+            font: caption;
+        }
+
+
 
         ul li {
             text-transform: uppercase;
         }
 
-        p.first a {
-            color: green;
-        }
-
-        .wrapper {
-            font-size: 20px;
-        }
-        .wrapper span {
-            font-size: 0.5em;
-            background: #FC9;
-        }
-
-        .wrapper span i {
-            font-size: 1.5em;
-            background: yellow;
-        }
-
-        .h2 {
-            text-transform: uppercase;
-            color: hsl(0, 100%, 50%);
-            background-color: hsla(56, 86%, 77%, 0.5); /* Цвет фона под заголовком */
-           
-        }
-
-        button {
-            font: caption;
-        }
-        
-
     </style>
- 
+
 
 </head>
 
@@ -83,7 +111,7 @@
         </ul>
     </nav>
     <!-- End Navigation -->
-    <header>
+    <header class="header">
         <a href="index.html">
             <h1>Peculiar Blog</h1>
         </a>
@@ -104,25 +132,40 @@
                     Basic typography, images, and code are all supported.</div>
                 <hr>
                 <p class="first">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="">Accusantium</a> saepe placeat quisquam, eveniet aliquam ipsum amet cupiditate repudiandae obcaecati, <span><a href="">Accusantium</a> impedit aperiam. Expedita, nobis odit. Dolor eius aut quisquam laboriosam recusandae?</span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="">Accusantium</a> saepe placeat
+                    quisquam, eveniet aliquam ipsum amet cupiditate repudiandae obcaecati, <span><a href="">Accusantium</a>
+                        impedit aperiam. Expedita, nobis odit. Dolor eius aut quisquam laboriosam recusandae?</span>
                 </p>
 
                 <p>
-                    <span class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="">Accusantium</a> saepe placeat quisquam, eveniet aliquam ipsum amet cupiditate repudiandae obcaecati, impedit aperiam. <a href="">Expedita</a>, nobis odit. Dolor eius aut quisquam laboriosam recusandae?</span>
+                    <span class="decor">Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="">Accusantium</a>
+                        saepe placeat quisquam, eveniet aliquam ipsum amet cupiditate repudiandae obcaecati, impedit
+                        aperiam. <a href="">Expedita</a>, nobis odit. Dolor eius aut quisquam laboriosam recusandae?</span>
                 </p>
-                    
-                        
-                        
-                <p class='first'>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus
+
+                <foo class='selector'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime autem alias placeat nemo sapiente ipsum deleniti aspernatur fugiat vel tempora consequuntur tempore cupiditate doloremque, eveniet ad enim expedita inventore laboriosam?</foo>
+
+
+
+                <p class='first'>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur
+                    ridiculus
                     mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere
                     consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
 
                 <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet
                     fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-                <h2>Heading</h2>
+                <h2 class="h2">Размер шрифта</h2>
                 <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo
                     luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac
                     consectetur ac, vestibulum at eros.</p>
+                <div class="wrapper">
+                    Размер шрифта: 40px
+                    <span>
+                        Размер шрифта: 20px
+                        <i>Размер шрифта: 30px </i>
+                    </span>
+                </div>
+
                 <h3>Sub-heading</h3>
                 <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                 <pre><code>Example code block</code></pre>
@@ -198,20 +241,13 @@
                         unprepared.</p>
                     <div class="read-more"><a href="#">Continue Reading</a></div>
 
-                    <div class="wrapper">
-                            Размер шрифта: 20px
-                            <span>
-                                    Размер шрифта: 10px
-                                    <i>Размер шрифта: 15px </i>
-                            </span>
-                    </div>
-         
+
                 </div>
             </article>
 
         </section>
 
-        
+
     </main>
 
     <footer class="footer">
