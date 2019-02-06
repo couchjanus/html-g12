@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "/home/janus/www/laravel-w11"
 		}
 	],
 	"settings": {
