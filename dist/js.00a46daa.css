@@ -361,12 +361,12 @@ template {
 }
 
 .nav-menu {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
   background: url(overlay.b2a30f3f.png) #002e5b;
   list-style: none;
   margin: 0;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
 }
 .nav-menu .nav-item a {
   color: whitesmoke;
@@ -393,8 +393,9 @@ template {
 
 @media (max-width: 767px) {
   .nav-menu {
-    flex-flow: column wrap;
+    display: flex;
     justify-content: space-around;
+    flex-flow: column wrap;
     padding: 0;
     position: relative;
     display: none;
@@ -410,6 +411,8 @@ template {
   }
 
   .navbar {
+    display: flex;
+    justify-content: space-around;
     display: block;
     background: #002e5b;
     height: 50px;
@@ -447,6 +450,9 @@ template {
   line-height: 45px;
   width: 45px;
   height: 45px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
   border-radius: 50%;
 }
 .footer .footer-socials a:hover {
@@ -477,17 +483,26 @@ template {
 .product {
   background-color: lightgrey;
   text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
   border-radius: 10px;
+  -webkit-box-shadow: rgba(10, 18, 20, 0.54902) 0px 4px 13px 3px;
+  -moz-box-shadow: rgba(10, 18, 20, 0.54902) 0px 4px 13px 3px;
+  -ms-box-shadow: rgba(10, 18, 20, 0.54902) 0px 4px 13px 3px;
+  box-shadow: rgba(10, 18, 20, 0.54902) 0px 4px 13px 3px;
   width: 250px;
   height: 360px;
   position: relative;
   overflow: hidden;
-  box-shadow: rgba(10, 18, 20, 0.54902) 0px 4px 13px 3px;
 }
 
 .product-back {
   width: 250px;
   height: 360px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
   border-radius: 10px;
   background-color: lightgrey;
   color: #EE3B24;
@@ -495,7 +510,13 @@ template {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  -webkit-box-shadow: rgba(10, 18, 20, 0.54902) 0px 4px 13px 3px;
+  -moz-box-shadow: rgba(10, 18, 20, 0.54902) 0px 4px 13px 3px;
+  -ms-box-shadow: rgba(10, 18, 20, 0.54902) 0px 4px 13px 3px;
   box-shadow: rgba(10, 18, 20, 0.54902) 0px 4px 13px 3px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: -1;
   top: -360px;
@@ -512,7 +533,7 @@ template {
 .product-menu {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 360px;
   background-color: lightgrey;
   color: #002e5b;
@@ -521,7 +542,7 @@ template {
   transition: all 0.7s;
 }
 
-.product-price, .buy-now {
+.product-button, .buy-now, .product-price {
   position: relative;
   font-size: 1.1rem;
   padding-top: 20px;
@@ -535,7 +556,6 @@ template {
   cursor: pointer;
   transition: all 0.3s;
 }
-
 .buy-now:hover {
   background-color: #fed136;
   color: #002e5b;
@@ -547,11 +567,13 @@ template {
 
 .product-wrapper {
   -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
   display: inline-block;
   margin: 1em;
   height: 360px;
-  transition: all 0.7s ease;
   -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 

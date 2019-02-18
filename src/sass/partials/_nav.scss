@@ -11,12 +11,13 @@
 }
 
 .nav-menu {
+    @include flexible ();
+    // display: flex;
+    // justify-content: space-around;
+    flex-flow: row wrap;
     background: url(./images/overlay.png) $menu-bg-color;
     list-style: none;
     margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
 
     .nav-item a {
         color: $anchor-text-color;
@@ -49,8 +50,9 @@
 
 @media (max-width: 767px) {
     .nav-menu {
+        @include flexible ();
         flex-flow: column wrap;
-        justify-content: space-around;
+        // justify-content: space-around;
         padding: 0;
         position: relative;
         display: none;
@@ -67,6 +69,7 @@
     }
 
     .navbar {
+        @include flexible ();
         display: block;
         background: $menu-bg-color;
         height: 50px;
