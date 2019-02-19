@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/couchjanus/html-g12#readme",
   "devDependencies": {
+    "jshint": "^2.10.1",
+    "jslint": "^0.12.1",
     "sass": "^1.17.0"
   },
   "dependencies": {
