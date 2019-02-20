@@ -19,8 +19,10 @@
   },
   "homepage": "https://github.com/couchjanus/html-g12#readme",
   "devDependencies": {
+    "autoprefixer": "^9.4.8",
     "jshint": "^2.10.1",
     "jslint": "^0.12.1",
+    "postcss-nested": "^4.1.1",
     "sass": "^1.17.0"
   },
   "dependencies": {
